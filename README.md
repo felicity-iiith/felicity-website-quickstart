@@ -22,7 +22,7 @@ git clone https://github.com/felicity-iiith/felicity-website-quickstart.git
 ## Clone the website
 Currently
 ```bash
-git clone https://github.com/felicity-iiith/felicity17-website.git
+git clone --recursive https://github.com/felicity-iiith/felicity17-website.git
 ```
 
 ## Start the box
