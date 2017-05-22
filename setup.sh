@@ -8,6 +8,7 @@ cd /var/www/$DIR
 npm install
 composer install
 sudo -E npm install -g gulp
+sudo -E bash setup/phpmyadmin.sh
 
 cd /var/www/
 cp setup/config.php $DIR/src/app/config.php
