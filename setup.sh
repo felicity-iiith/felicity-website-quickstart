@@ -8,11 +8,12 @@ cd /var/www/$DIR
 npm install
 composer install
 sudo -E npm install -g gulp
-sudo -E bash setup/phpmyadmin.sh
-
-bash ../setup/mail.sh
 
 cd /var/www/
+
+sudo -E bash setup/phpmyadmin.sh
+bash setup/mail.sh
+
 cp setup/config.php $DIR/src/app/config.php
 cp $DIR/src/HTACCESS $DIR/src/.htaccess
 mysql -u root <setup/createdb.sql
