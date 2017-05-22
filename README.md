@@ -3,6 +3,15 @@
 This is a vagrant box to ease the development of the felicity website that uses
 [ScotchBox](http://box.scotch.io) as its LAMP box.
 
+## Important notes
+- We use mailcatcher and therefore when trying to create account, mails are not
+  actually sent, but shown on http://192.168.33.10:1080/ . If you dont want
+  this, you can configure your students/research mail in `src/app/config.php` from
+  the parameters on [this self-help page]( https://self-help.iiit.ac.in/wiki/index.php/Configuration_of_Thunderbird_client_for_IIITH_Mail_Servers#IIIT-H_Students_Server) .
+  Also ignore mailcatcher errors for now.
+- PHPMyAdmin is available on http://192.168.33.10/phpmyadmin . User is `feli`
+  and password is `password`
+
 
 ## Install vagrant
 Just follow the steps here [click here](https://www.vagrantup.com/downloads.html).
