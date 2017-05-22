@@ -11,6 +11,9 @@ This is a vagrant box to ease the development of the felicity website that uses
   Also ignore mailcatcher errors for now.
 - PHPMyAdmin is available on http://192.168.33.10/phpmyadmin . User is `feli`
   and password is `password`
+- `gulp watch` does not work inside the vagrant box, and you can install gulp
+  in your host (`sudo npm install -g gulp`) and do `gulp watch` to make it work.
+  (You might have to reinstall node dependencies or do `npm rebuild`)
 
 
 ## Install vagrant
