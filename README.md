@@ -32,13 +32,9 @@ git clone https://github.com/felicity-iiith/felicity-website-quickstart.git
 cd felicity-website-quickstart
 ```
 
-## Clone the website
-Currently
-```bash
-git clone --recursive https://github.com/felicity-iiith/felicity17-website.git
-```
-
 ## Start the box
+Will take a lot of time (15-30 minutes) the first time as it automatically
+installs dependencies
 ```bash
 vagrant up
 ```
@@ -46,16 +42,6 @@ vagrant up
 ## SSH into the box
 ```bash
 vagrant ssh
-```
-
-## Run inside the SSH shell for setup
-```bash
-cd /var/www
-# Do the next step only if you are behind IIIT proxy
-bash setup/proxy.sh
-source ~/.bashrc
-bash /var/www/setup.sh
-source ~/.bashrc
 ```
 
 ## Build the website
