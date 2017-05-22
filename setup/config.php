@@ -65,9 +65,9 @@ $cas_cfg = [
 $SECRET_STRING = 'kuchbhi';
 
 $email_cfg = [
-    'server_host'   => 'email_server_host_ip',
-    'server_domain' => 'email.server.domain.name',
-    'server_port'   => 25,
+    'server_host'   => '127.0.0.1',
+    'server_domain' => '127.0.0.1',
+    'server_port'   => 1025,
     'accounts'      => [
         'noreply'   => [
             'username'  => 'email_user',
