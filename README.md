@@ -17,6 +17,7 @@ Google or [click here](https://www.virtualbox.org/wiki/Downloads)
 ## Clone this repo
 ```bash
 git clone https://github.com/felicity-iiith/felicity-website-quickstart.git
+cd felicity-website-quickstart
 ```
 
 ## Clone the website
@@ -38,9 +39,11 @@ vagrant ssh
 ## Run inside the SSH shell for setup
 ```bash
 cd /var/www
+# Do the next step only if you are behind IIIT proxy
+bash setup/proxy.sh
+source ~/.bashrc
 bash setup.sh
 source ~/.bashrc
-sudo -E npm install -g gulp
 ```
 
 ## Build the website
