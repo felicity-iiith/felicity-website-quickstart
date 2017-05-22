@@ -17,6 +17,7 @@ cp setup/config.php $DIR/src/app/config.php
 cp $DIR/src/HTACCESS $DIR/src/.htaccess
 mysql -u root <setup/createdb.sql
 mysql -u root jugaad <setup/jugaad.sql
+mysql -u root users <$DIR/sql/users.sql
 
 echo "cd /var/www/$DIR" >>~/.bashrc
 echo "alias build=\"cd /var/www/$DIR; gulp build\"" >>~/.bashrc
