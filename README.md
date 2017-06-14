@@ -61,7 +61,7 @@ vagrant suspend # suspend the box
 
 Inside the SSH shell
 ```bash
-cd /var/www/felicity17-website # the project directory
+cd /var/www/felicity18-website # the project directory
 gulp build # builds the website
 gulp watch # watch for changes and rebuild automatically
 ```
