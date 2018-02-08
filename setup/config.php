@@ -8,28 +8,10 @@ $cfg = [
 
     'databases' => [
         'jugaad' => [
-            'db_host'   => 'localhost',
+            'db_host'   => 'db',
             'db_user'   => 'feli',
             'db_pass'   => 'password',
             'db_name'   => 'jugaad',
-        ],
-        'users' => [
-            'db_host'   => 'localhost',
-            'db_user'   => 'feli',
-            'db_pass'   => 'password',
-            'db_name'   => 'users',
-        ],
-        'sap' => [
-            'db_host'   => 'localhost',
-            'db_user'   => 'feli',
-            'db_pass'   => 'password',
-            'db_name'   => 'sap',
-        ],
-        'contest' => [
-            'db_host'   => 'localhost',
-            'db_user'   => 'feli',
-            'db_pass'   => 'password',
-            'db_name'   => 'contest',
         ],
     ],
 
@@ -53,57 +35,13 @@ $cfg = [
 
 $admins = [
     // List of user ids of admins
+    'admin',
 ];
 
-$cas_cfg = [
-    'host'           => 'login.iiit.ac.in',
-    'context'        => '/cas',
-    'port'           => 443,
+$keycloak_cfg = [
+    'host'           => 'https://felicity.iiit.ac.in/auth/realms/master',
     'server_ca_cert' => APPPATH . 'iiit.ac.in.pem', // Optional, Recommended.
+    'client_id'      => 'mainwebsite',
+    'client_secret'  => '<secret here>'
 ];
 
-$SECRET_STRING = 'kuchbhi';
-
-$email_cfg = [
-    'server_host'   => '127.0.0.1',
-    'server_domain' => '127.0.0.1',
-    'server_port'   => 1025,
-    'smtp_auth'     => false,
-    'smtp_secure'   => '',
-    'accounts'      => [
-        'noreply'   => [
-            'username'  => 'email_user',
-            'password'  => 'email_user_pass',
-            'email'     => 'email_address',
-            'from_name' => 'Team Felicity'
-        ],
-        'noreply_threads'   => [
-            'username'      => 'email_user',
-            'password'      => 'email_user_pass',
-            'email'         => 'email_address',
-            'from_name'     => 'Team Felicity',
-            'reply_to'      => 'email_reply_to',
-            'reply_to_name' => 'Threads Team'
-        ]
-    ]
-];
-
-$ldap_cfg = [
-    "host"          => "ldap://192.168.0.1",
-    "bind_dn"       => "...",
-    "bind_password" => "...",
-];
-
-$payment_cfg = [
-    'webdev' => [
-        'url'   => '...',
-        'salt'  => 'some-very-random-string'
-    ],
-    'ttt' => [
-        'gateway_url'   => '...',
-        'salt'  => 'some-very-random-string',
-        'nick_field' => 'some-field',
-        'api_url' => '...',
-        'api_headers' => []
-    ]
-];

@@ -6,7 +6,7 @@
 -- Generation Time: Dec 03, 2017 at 05:39 PM
 -- Server version: 5.5.46-0ubuntu0.14.04.2
 -- PHP Version: 5.6.14-1+deb.sury.org~trusty+1
-
+USE 'jugaad';
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 

@@ -1,4 +1,23 @@
-# Felicity Website quickstart
+# Felicity Website Quickstart
+
+# New method (via docker)
+
+- Install `docker` and `docker-compose`
+- `bash setup/docker-setup.sh`
+- `docker-compose up`
+
+Access the site at http://localhost:8080/
+
+Access PHPMyAdmin at http://localhost:8081/ (user: feli, password: password)
+
+## Troubleshooting
+- Make sure environment variables `HTTP_PROXY` and `HTTPS_PROXY` are set correctly
+ (`http://proxy.iiit.ac.in:8080/` for IIIT network)
+- You might have to run docker in root, check if the proxy environment variables are ste correctly there also
+- During the first run, it might take more time, especially to get/build the npm modules (in gulp container)
+- The code has not been built till a build directory appears in your website directory and the build will be updated automatically
+
+# Old method (via vagrant)
 
 This is a vagrant box to ease the development of the felicity website that uses
 [ScotchBox](http://box.scotch.io) as its LAMP box.
