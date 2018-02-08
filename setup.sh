@@ -1,4 +1,4 @@
-DIR=felicity18-website
+DIR=felicity-website
 
 cd /var/www
 rm public
