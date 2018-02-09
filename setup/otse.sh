@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DIR=felicity-website
+
 cd /var/www
 # Remove the next two lines if you are not behind IIIT proxy
 cat setup/proxyenv.sh | cat >>/home/vagrant/.bashrc
