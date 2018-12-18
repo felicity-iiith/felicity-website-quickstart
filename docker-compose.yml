@@ -28,9 +28,6 @@ services:
 
   composer:
     image: composer
-    environment:
-      HTTP_PROXY: ${HTTP_PROXY}
-      HTTPS_PROXY: ${HTTPS_PROXY}
     volumes:
       - ./felicity-website:/app
     working_dir: /app
@@ -38,13 +35,10 @@ services:
 
   gulp:
     image: node:8
-    environment:
-      HTTP_PROXY: ${HTTP_PROXY}
-      HTTPS_PROXY: ${HTTPS_PROXY}
     volumes:
       - ./felicity-website:/app
     working_dir: /app
-    command: "bash -c 'yarn config set proxy ${HTTP_PROXY} && yarn global add gulp && yarn install && gulp watch'"
+    command: "bash -c 'yarn global add gulp && yarn install && gulp watch'"
 
 volumes:
   db:
