@@ -1,6 +1,7 @@
 <?php
 
 $cfg = [
+	'debug'					=> true,
     'default_controller'    => 'hello',
     'default_method'        => 'index',
 
